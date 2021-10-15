@@ -1,10 +1,15 @@
-<template><div> Hello {{name}} </div></template>
+<template>
+  <div>
+    Hello {{ name }}
+    <div>World</div>
+  </div>
+</template>
 
 <script>
 export default {
   data() {
-    return{
-    name:"Juhi Bhardwaj",
+    return {
+      name: "Juhi Bhardwaj",
     };
   },
 };
