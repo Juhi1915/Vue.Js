@@ -17,6 +17,9 @@
       <h3 v-for="name in fullNames" :key="name">
         {{ name.fisrt }} {{ name.last }}
       </h3>
+      <template v-for="name in list">
+        <h1 v-if="name === 'Juhi'" :key="name">{{ name }}</h1>
+      </template>
     </template>
   </div>
 </template>
@@ -35,6 +38,7 @@ export default {
         { fisrt: "Rohit", last: "Thakur" },
         { fisrt: "Mohit", last: "Bhardwaj" },
       ],
+      list: ["Juhi", "Rohit", "Mohit"],
     };
   },
 };
