@@ -4,6 +4,8 @@
     <ConditionalRendering />
     <NameChnageHandler />
     <Count />
+    <Form />
+    <Watchers />
   </div>
 </template>
 
@@ -12,6 +14,8 @@ import HelloWorld from "./components/HelloWorld";
 import ConditionalRendering from "./components/ConditionalRendering";
 import NameChnageHandler from "./components/NameChnageHandler";
 import Count from "./components/Count";
+import Form from "./components/Form";
+import Watchers from "./components/Watchers";
 
 export default {
   name: "App",
@@ -20,6 +24,8 @@ export default {
     ConditionalRendering,
     NameChnageHandler,
     Count,
+    Form,
+    Watchers,
   },
 };
 </script>
