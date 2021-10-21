@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>Hello Computed Properties:- {{fullName}}</h1>
     Hello {{ name }}
     <div v-html="channel"></div>
     <!-- {Surthod property} -->
@@ -14,8 +15,15 @@ export default {
       name: "Juhi Bhardwaj",
       channel: "<b>Code Sendbox</b>",
       isDisabled: true,
+      firstName:'Juhi',
+      lastName:'Bhardwaj'
     };
   },
+  computed: {
+    fullName(){
+      return `${this.firstName}  ${this.lastName}`
+    }
+  }
 };
 </script>
 
