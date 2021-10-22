@@ -6,6 +6,10 @@
     <Count />
     <Form />
     <Watchers />
+    <Greet name="React Js" heroname="Batman" />
+    <Greet name="vue js" heroname="Postman" />
+    <Greet name="Node Js" heroname="NavMan" />
+    <Greet :name="name" :channel="channel" />
   </div>
 </template>
 
@@ -16,6 +20,7 @@ import NameChnageHandler from "./components/NameChnageHandler";
 import Count from "./components/Count";
 import Form from "./components/Form";
 import Watchers from "./components/Watchers";
+import Greet from "./components/Greet";
 
 export default {
   name: "App",
@@ -26,6 +31,13 @@ export default {
     Count,
     Form,
     Watchers,
+    Greet,
+  },
+  data() {
+    return {
+      name: "Java",
+      channel: "GFG",
+    };
   },
 };
 </script>
