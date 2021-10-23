@@ -2,7 +2,7 @@
   <div>
     <hr />
     <hr />
-    <h1>{{ name }} a.ke.a -> {{ heroname }}</h1>
+    <h5>{{ name }} a.ke.a -> {{ heroname }}</h5>
   </div>
 </template>
 
@@ -11,6 +11,17 @@
 export default {
   name: "component Props",
   props: ["name", "heroname"],
+  //BY this way we can add props type in props
+  // props: {
+  //   title: String
+  //   }
+  // Or we can also pass required if the props is necessary
+  // props: {
+  //   title: {
+  //   type: "String",
+  //   required: true
+  // }
+  //   }
 };
 </script>
 
