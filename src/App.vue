@@ -6,10 +6,10 @@
     <Count />
     <Form />
     <Watchers />
-    <Greet name="React Js" heroname="Batman" />
-    <Greet name="vue js" heroname="Postman" />
-    <Greet name="Node Js" heroname="NavMan" />
-    <Greet :name="name" :channel="channel" />
+    <Greet name="ReactJs" heroname="Batman" />
+    <Greet name="vuejs" heroname="Postman" />
+    <Greet name="NodeJs" heroname="NavMan" />
+    <Greet :name="name" :heroname="channel" />
   </div>
 </template>
 

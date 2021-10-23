@@ -9,12 +9,8 @@
 
 <script>
 export default {
-  data() {
-    return {
-      name: "component Props",
-      props: ["name", "heroname"],
-    };
-  },
+  name: "component Props",
+  props: ["name", "heroname"],
 };
 </script>
 
